@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;id&apos; in &apos;com.ez.entity.Enquiry&apos; to &apos;eId&apos;&#x0D;&#x0A;- Original project: &apos;01-Counceller-Backend&apos;&#x0D;&#x0A;- Original element: &apos;com.ez.entity.Enquiry.id&apos;&#x0D;&#x0A;- Renamed element: &apos;com.ez.entity.Enquiry.eId&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;id&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ez.entity{Enquiry.java[Enquiry^id" name="eId" references="true" setter="false" stamp="1728836988518" textual="false" version="1.0"/>
+</session>

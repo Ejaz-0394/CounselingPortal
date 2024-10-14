@@ -1,0 +1,33 @@
+package com.ez.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ez.dao.LoginRequest;
+import com.ez.service.CounsellorService;
+
+@RestController
+@RequestMapping("/api")
+public class CounsellorController {
+	
+	@Autowired
+	private CounsellorService counsellorService;
+
+	@PostMapping("/login")
+	public ResponseEntity<String> login(@RequestBody LoginRequest loginRequest){
+		
+		boolean isAuthenticated=counsellorService.authenticate(loginRequest.getEmail(), loginRequest.getPassword());
+
+			if(isAuthenticated) {
+				return ResponseEntity.ok("LoginSuccessfull");
+			}	else {
+				return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid email or password");
+			}
+	}
+	
+}
