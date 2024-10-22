@@ -61,6 +61,13 @@ public class Enquiry {
 		this.counsellor = counsellor;
 	}
 
+	@Override
+	public String toString() {
+		return "Enquiry [eId=" + eId + ", studentName=" + studentName + ", studentPhno=" + studentPhno + ", courseName="
+				+ courseName + ", classMode=" + classMode + ", enqStatus=" + enqStatus + ", createdDate=" + createdDate
+				+ ", updatedDate=" + updatedDate + ", counsellor=" + counsellor + "]";
+	}
+
 	
 
 	

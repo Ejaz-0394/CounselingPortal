@@ -8,5 +8,5 @@ import com.ez.entity.Counsellor;
 
 public interface CounsellorRepository extends JpaRepository<Counsellor, Integer> {
 		
-	Optional<Counsellor> findByCounsellorEmail(String email);
+	Counsellor  findByCounsellorEmail(String counsellorEmail);
 }
